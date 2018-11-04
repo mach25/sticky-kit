@@ -4,15 +4,23 @@
 @license Sticky-kit v1.1.3 | MIT | Leaf Corcoran 2015 | http://leafo.net
  */
 
-(function() {
-  var $, win;
-
-  $ = window.jQuery;
-
-  win = $(window);
+(function($) {
+  const win = $(window);
 
   $.fn.stick_in_parent = function(opts) {
-    var doc, elm, enable_bottoming, fn, i, inner_scrolling, len, manual_spacer, offset_top, outer_width, parent_selector, recalc_every, sticky_class;
+    var doc,
+        elm,
+        enable_bottoming,
+        fn,
+        i,
+        inner_scrolling,
+        len,
+        manual_spacer,
+        offset_top,
+        outer_width,
+        parent_selector,
+        recalc_every,
+        sticky_class;
     if (opts == null) {
       opts = {};
     }
@@ -262,4 +270,4 @@
     return this;
   };
 
-}).call(this);
+}(jQuery));
